@@ -1,0 +1,19 @@
+# ignore all files except from sources, as folders named after node headers version are automatically created after installation
+# *
+# !.vscode
+# !src
+# !include
+# !template
+# !binding.gyp
+# !index.d.ts
+# !index.ts
+# !native.js
+# !CMakeLists.txt
+# !package.json
+# !.gitignore
+
+11.1.1
+bin
+build
+node_modules
+.vs
