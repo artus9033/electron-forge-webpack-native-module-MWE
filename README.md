@@ -1,15 +1,9 @@
 # electron-forge-webpack-native-module-MWE
 
-A reproduction MWE exposing a bug in the template that fails to relocate native modules that are `npm link`-ed or installed with `npm i ./src/native`.
+A reproduction MWE exposing a bug in the template that fails to relocate local native modules if they are requried via `bindings`.
 
 # Instructions
 
 1. `git clone`
-2. `npm i`
-3. `cd src`
-4. `cd native`
-5. `npm i` (postinstall will configure & build the addon)
-6. `npm link`
-7. `cd ../..`
-8. `npm link native-module`
-9. `npm run start` will greet You with an error dialog:
+2. `npm i` (postinstall will configure & build the addon)
+3. `npm run start` will greet You with an error dialog if you uncomment `src/index.ts` line 3 in favor of line 4

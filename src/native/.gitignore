@@ -12,7 +12,7 @@
 # !package.json
 # !.gitignore
 
-11.1.1
+14.0.0
 bin
 build
 node_modules

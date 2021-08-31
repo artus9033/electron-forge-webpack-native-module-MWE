@@ -1,5 +1,8 @@
 import { BrowserWindow, app } from "electron";
-import native from "native-module";
+
+// const native = require("bindings")("native.node"); // <- this won't work when the app is packaged
+const native = require("../build/Release/native.node");
+
 declare const MAIN_WINDOW_WEBPACK_ENTRY: any;
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.

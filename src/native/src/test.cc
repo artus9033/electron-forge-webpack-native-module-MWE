@@ -4,7 +4,11 @@
 
 void Test(const Napi::CallbackInfo &info)
 {
-    std::cout << "Native addon test" << std::endl;
+    std::cout << std::endl
+              << std::endl
+              << " !!!!!! Native addon test !!!!!! "
+              << std::endl
+              << std::endl;
 }
 
 Napi::Object InitModule(Napi::Env env, Napi::Object exports)
